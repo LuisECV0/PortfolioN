@@ -1,13 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-
+import './NavBar.css';
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('Home');
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -51,11 +52,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navBar-text">
                 <div className="soccial-icon">
-                    <a href="#"><img src={navIcon1} alt="" /></a>
-                    <a href="#"><img src={navIcon2} alt="" /></a>
-                    <a href="#"><img src={navIcon3} alt="" /></a>
+                    <a href="#"><img src={navIcon1} alt="Linkedin" /></a>
+                    <a href="#"><img src={navIcon2} alt="Facebook" /></a>
+                    <a href="#"><img src={navIcon3} alt="Instagram" /></a>
                 </div>
-                <button className="vvd" onClick={() => console.log('connect')}><span>Let is connect</span></button>
+            {/*<button className="vvd" onClick={() => console.log('connect')}><span>Let is connect</span></button>*/}
             </span>
           </Navbar.Collapse>
         </Container>
