@@ -5,12 +5,11 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   background-color: #121212;
-  border: 1px solid greenyellow;
   transition: padding 0.32s ease-in-out;
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width:auto;
 }
 
 nav.navbar .navbar-nav {
@@ -36,23 +35,17 @@ nav.navbar .navbar-nav .nav-link.active {
 
 span.navbar-text {
   display: flex;
-  align-items:end;
-  border: 1px solid red;
-  color: #d60909;
-  background-color: #fff;
+  align-items: center;
 }
 
 .social-icon {
   display: flex;
   margin-left: 14px;
-  border: 1px solid greenyellow;
 }
 
 .social-icon a img {
-  width: 100px; 
-  border: 1px solid blue;  
+  width: 100px;  
 }
-
 
 .social-icon a {
   width: 42px;
