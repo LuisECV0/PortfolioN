@@ -3,36 +3,48 @@
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
 	font-weight: 700;
-}
-@font-face {
+  }
+  
+  @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Medium.ttf');
 	font-weight: 500;
-}
-@font-face {
+  }
+  
+  @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.App {
+  }
+  
+  * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  html, body {
+	height: 100%;
+	margin: 0;
+  }
+  
+  .App {
 	display: flex;
-	gap: 100px;
 	flex-direction: column;
-}
-.navbar {
-	border: 1px solid greenyellow;
-	
-}
-
-.body {
-	border: 1px solid red;
-}
-.footer {
-	border: 1px solid rgb(75, 47, 255);
-}
+	min-height: 100vh;
+  }
+  
+  /* Navbar ocupa el 10% de la altura de la pantalla */
+  .navbar {
+	height: auto;
+  }
+  
+  /* AboutMe ocupa el 60% de la altura de la pantalla */
+  .AboutMe {
+	padding-top: 100px;
+	height: 60vh;
+  }  
+  
+  .footer {
+	height: 20vh;
+  }

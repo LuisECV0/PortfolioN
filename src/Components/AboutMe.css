@@ -1,0 +1,26 @@
+.about-me {
+    padding: 60px 0;
+    background-color: #766f6f;
+  }
+
+.about-me img {
+    width: 10vh;
+    height: auto;
+}
+
+.about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+  
+.about-me a.btn {
+    margin-top: 20px;
+}
+  
