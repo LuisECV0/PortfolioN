@@ -1,13 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap"; // Importa una imagen de perfil
 import './AboutMe.css'
-import banner from '../assets/img/banner-bg.png';
+import mob from '../assets/img/mob2.svg';
 export const AboutMe = () => {
   return (
     <section id="about-me" className="about-me">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6}>
-            <img src={banner} alt="Profile" className="img-fluid rounded-circle"/>
+            <img src={mob} alt="Profile" className="img-fluid rounded-circle"/>
           </Col>
           <Col xs={12} md={6}>
             <div className="about-me-text">
@@ -17,8 +17,9 @@ export const AboutMe = () => {
                 Tengo experiencia en desarrollo web y siempre estoy buscando aprender algo nuevo. 
                 Disfruto trabajar en proyectos colaborativos y enfrentar nuevos desafíos.
               </p>
-              <a href="#contact" className="btn btn-primary">Contáctame</a>
-              <a href="#contact" className="btn btn-primary">Download CV</a>
+              <div className="icon-dw">
+                <a href="#contact">Download CV</a>
+              </div>
             </div>
           </Col>
         </Row>

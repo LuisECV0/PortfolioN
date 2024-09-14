@@ -85,39 +85,6 @@ span.navbar-text {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-.navbar-text button {
-  font-family: 'Centra', sans-serif;
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-left: 18px;
-  position: relative;
-  background-color: transparent;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.navbar-text button::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: width 0.3s ease-in-out;
-}
-
-.navbar-text button:hover {
-  color: #121212;
-}
-
-.navbar-text button:hover::before {
-  width: 100%;
-}
-
 nav.navbar .navbar-toggler {
   border: 0;
   background: transparent;
