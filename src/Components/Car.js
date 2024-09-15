@@ -10,6 +10,7 @@ const ExampleCarouselImage = ({ text }) => {
       src={imageSrc}
       alt={text}
     />
+    
   );
 };
 

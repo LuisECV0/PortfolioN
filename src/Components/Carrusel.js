@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from './Car'; // Asegúrate de que la ruta sea correcta
+import ExampleCarouselImage from './Car';
 import './Carrusel.css';
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
