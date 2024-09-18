@@ -18,6 +18,19 @@ const projects = [
     description: 'Description for project 3',
     imgUrl: 'https://via.placeholder.com/300',
   },
+  {
+    title: 'Project 3',
+    description: 'Description for project 3',
+    imgUrl: 'https://via.placeholder.com/300',
+  },  {
+    title: 'Project 3',
+    description: 'Description for project 3',
+    imgUrl: 'https://via.placeholder.com/300',
+  },  {
+    title: 'Project 3',
+    description: 'Description for project 3',
+    imgUrl: 'https://via.placeholder.com/300',
+  },
 ];
 
 const Projects = () => {
