@@ -1,6 +1,7 @@
 import React from 'react';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './Projects.css'; // Añadiremos los estilos en Projects.css
+import './Projects.css';
 
 const projects = [
   {
@@ -71,7 +72,17 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Col key={index} md={4} className="project-col">
               <Card className="project-card">
-                <Card.Img variant="top" src={project.imgUrl} alt={project.title} />
+                <div className="project-image-wrapper">
+                  <Card.Img variant="top" src={project.imgUrl} alt={project.title} />
+                  <div className="icon-overlay">
+                    <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="project-icon github-icon" />
+                    </a>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <FaExternalLinkAlt className="project-icon link-icon" />
+                    </a>
+                  </div>
+                </div>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
