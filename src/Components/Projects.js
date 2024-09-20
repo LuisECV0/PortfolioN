@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Project - Clone Netflix',
     description: 'Clon_Netflix_React',
-    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2FClone-Netflix-min.png?alt=media&token=c39a75b6-ecdc-44dc-b4dc-cef2797dd971', // Placeholder, cambia por la URL de la imagen
+    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2FClone-Netflix-min.png?alt=media&token=c39a75b6-ecdc-44dc-b4dc-cef2797dd971',
   },
   {
     title: 'Project - Ecommerce',

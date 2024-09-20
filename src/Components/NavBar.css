@@ -27,7 +27,9 @@ nav.navbar .navbar-nav .nav-link {
   opacity: 0.75;
   transition: opacity 0.3s ease;
 }
-
+.navbar-toggler {
+  width: 50px;
+}
 nav.navbar .navbar-nav .nav-link:hover,
 nav.navbar .navbar-nav .nav-link.active {
   opacity: 1;

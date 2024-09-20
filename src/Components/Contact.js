@@ -1,37 +1,61 @@
 import React from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import Swal from 'sweetalert2'
 import './Contact.css';
 
-export const Contact = () => {
+const Contact = () => {
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "dc85e2e6-f5e4-4842-bca7-d18a628a2d75");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Enviado!",
+        text: "Mensaje enviado correctamente",
+        icon: "success"
+      });
+    }
+  };
+
+
   return (
-    <section className="contact" id="contact">
-      <Container>
-        <Row className="align-items-center">
-          <Col size={12} md={6}>
-            <h2>Contact Me</h2>
-            <Form>
-              <Form.Group className="mb-3" controlId="formName">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter your name" />
-              </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter your email" />
-              </Form.Group>
+    <section className='contact' id='contact'>
+      <form onSubmit={''}>{/* OnSubmid desabilitado momentaneamente */}
 
-              <Form.Group className="mb-3" controlId="formMessage">
-                <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
-              </Form.Group>
+        <h2>Contact Form</h2>
 
-              <Button variant="primary" type="submit">
-                Send
-              </Button>
-            </Form>
-          </Col>
-        </Row>
-      </Container>
+        <div className='input-box'>
+          <label>Name:</label>
+          <input type="text" name='name' className='field' placeholder="Enter your Name" required/>
+        </div>
+
+        <div className='input-box'>
+          <label>Email address:</label>
+          <input type="email" name='email' className='field' placeholder="Enter your email" required/>
+        </div>
+
+        <div className='input-box'>
+          <label>Your Message:</label>
+          <textarea name='message' id='' className='field mess' placeholder='Enter your message' required></textarea>
+        </div>
+        <button type='submit'>Send Message</button>
+      </form>
     </section>
-  );
-};
+  )
+}
+export default Contact;
