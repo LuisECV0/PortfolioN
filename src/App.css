@@ -36,6 +36,7 @@
 	min-height: 100vh;
   }
   
+
   /* Navbar ocupa el 10% de la altura de la pantalla */
   .navbar {
 	height: auto;
@@ -43,7 +44,6 @@
   
   /* AboutMe ocupa el 60% de la altura de la pantalla */
   .AboutMe {
-	padding-top: 100px;
 	height: 60vh;
   }  
   

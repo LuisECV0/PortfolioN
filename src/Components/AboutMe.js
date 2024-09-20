@@ -11,14 +11,12 @@ export const AboutMe = () => {
           </Col>
           <Col xs={12} md={6}>
             <div className="about-me-text">
-              <h2>Sobre Mí</h2>
+              <h2>I`m LuisCV</h2>
               <p>
-                ¡Hola! Soy un desarrollador apasionado por la tecnología y la creación de soluciones innovadoras.
-                Tengo experiencia en desarrollo web y siempre estoy buscando aprender algo nuevo. 
-                Disfruto trabajar en proyectos colaborativos y enfrentar nuevos desafíos.
+              I`m developer frontend.
               </p>
               <div className="icon-dw">
-                <a href="#contact">Download CV</a>
+                <a href="#projects">Download CV</a>
               </div>
             </div>
           </Col>

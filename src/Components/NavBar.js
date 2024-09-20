@@ -27,12 +27,7 @@ export const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
-/*
-    useEffect(()=>{
 
-        return 
-    },[])
-*/
     return (
     <Navbar expand="lg" className={scrolled ? "scrolled":""}>
         <Container>
@@ -46,9 +41,13 @@ export const NavBar = () => {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navBar-link'} onClick={()=>onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#aboutMe" className={activeLink === 'AboutMe' ? 'active navbar-link' : 'navBar-link'} onClick={()=>onUpdateActiveLink('aboutme')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navBar-link'} onClick={()=> onUpdateActiveLink('skills')} >Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navBar-link'}onClick={()=>onUpdateActiveLink('projects')}>Projects</Nav.Link>
+
+              <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navBar-link'}onClick={()=>onUpdateActiveLink('contact')}>Contact</Nav.Link>
+              
+
             </Nav>
             <span className="navbar-text">
                 <div className="social-icon">
