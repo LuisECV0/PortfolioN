@@ -3,10 +3,36 @@
   padding: 20px 0;
   color: #fff;
   text-align: center;
-  position: relative; /* No uses 'absolute' o 'fixed' para el footer aquí */
+  position: relative;
   width: 100%;
 }
 
 .footer p {
   margin: 0;
+}
+
+.social-icon {
+  display: flex; /* Utiliza flexbox para centrar los íconos */
+  justify-content: center; /* Centra los íconos horizontalmente */
+  margin-bottom: 10px; /* Espacio entre los íconos y el texto */
+}
+
+.social-icon a {
+  margin: 0 10px; /* Espacio entre los íconos */
+}
+
+.social-icon img {
+  width: 40px; /* Ajusta el tamaño de los íconos */
+  height: 40px; /* Ajusta el tamaño de los íconos */
+}
+
+@media (max-width: 767px) {
+  .social-icon img {
+      width: 30px; /* Reduce el tamaño de los íconos en pantallas pequeñas */
+      height: 30px; /* Reduce el tamaño de los íconos en pantallas pequeñas */
+  }
+
+  .footer p {
+      font-size: 0.9rem; /* Ajusta el tamaño de fuente del texto en pantallas pequeñas */
+  }
 }

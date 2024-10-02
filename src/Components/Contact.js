@@ -35,7 +35,7 @@ const Contact = () => {
   return (
 
     <section className='contact' id='contact'>
-      <form onSubmit={''}>{/* OnSubmid desabilitado momentaneamente */}
+      <form onSubmit={'OnSubmit'}>{/* OnSubmid desabilitado momentaneamente */}
 
         <h2>Contact Form</h2>
 
