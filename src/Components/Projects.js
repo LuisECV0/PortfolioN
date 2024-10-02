@@ -1,59 +1,65 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+//import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Projects.css';
 
 const projects = [
   {
+    title: 'Project - Hacienda Montalván',
+    description: 'Description for project 3',
+    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Flanding-hacienda-min.png?alt=media&token=2cc1ea82-d6cd-41f9-bbe1-ff33a9487ba1',
+    gitUrl: 'https://github.com/LuisECV0/landing-hacienda-montalban',  
+  },
+  {
     title: 'Project - Clone Netflix',
     description: 'Clon_Netflix_React',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2FClone-Netflix-min.png?alt=media&token=c39a75b6-ecdc-44dc-b4dc-cef2797dd971',
+    gitUrl: 'https://github.com/LuisECV0/Clone-Netflix',
   },
+  {
+    title: 'Project - Clone Google',
+    description: 'Description for project 3',
+    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fclone-google-min.png?alt=media&token=df038956-a42a-431b-bcf8-3ed5ec7b0212',
+    gitUrl: 'https://github.com/LuisECV0/Google-Cln',
+  }, 
   {
     title: 'Project - Ecommerce',
     description: 'Description for project 2',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2FEcommerce-min.png?alt=media&token=b41110d8-b8a9-442b-aa6c-fe74784cdeda',
+    gitUrl: 'https://github.com/LuisECV0/projectEcommerce',
   },
   {
     title: 'Project - Calculator',
     description: 'Description for project 3',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fcal-sass-min.png?alt=media&token=6fe5bf2e-8228-4b5f-86b6-8875729ca7e9',
+    gitUrl: 'https://github.com/LuisECV0/calculadoraSAS',
   },
   {
     title: 'Project - FB Clone',
     description: 'Clon_Google_Reac',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2FclonFB-min.png?alt=media&token=4686e13b-fac3-4e82-8e6b-da7f0799da67',
-  },  
-  {
-    title: 'Project - Clone Google',
-    description: 'Description for project 3',
-    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fclone-google-min.png?alt=media&token=df038956-a42a-431b-bcf8-3ed5ec7b0212',
-  },  
-  {
-    title: 'Project - Hacienda Montalván',
-    description: 'Description for project 3',
-    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Flanding-hacienda-min.png?alt=media&token=2cc1ea82-d6cd-41f9-bbe1-ff33a9487ba1',
-  },
+    gitUrl: 'https://github.com/LuisECV0/clonFB',
+  },   
   {
     title: 'Project - Rock, Paper, Scissors',
     description: 'Description for project 3',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fp1-min.png?alt=media&token=60abffc0-037b-4a87-910a-7d3f42b898d4',
+    gitUrl: 'https://github.com/LuisECV0/Piedra-papel-tijera',
   },
   {
     title: 'LANDNG PAGE RE ZERO',
     description: 'Description for project 3',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fp2-min.png?alt=media&token=fddb9f62-399b-4666-ad08-3f6db7c563d9',
+    gitUrl: 'https://github.com/LuisECV0/landing-page',
   },  
   {
     title: 'Project - Login',
     description: 'Description for project 3',
     imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fp4-min.png?alt=media&token=0f15dcc2-e941-4dfa-8ea8-37b1b2d64c03',
+    gitUrl: 'https://github.com/LuisECV0/login-php',
   },  
-  {
-    title: 'Project - Calculator',
-    description: 'Description for project 3',
-    imgUrl: 'https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/IMGcompress%2Fp5-min.png?alt=media&token=f8c4985e-208a-401b-95cb-a09d90963e0b',
-  },
+
 ];
 
 const Projects = () => {
@@ -78,9 +84,11 @@ const Projects = () => {
                     <a href={project.gitUrl} target="_blank" rel="noopener noreferrer">
                       <FaGithub className="project-icon github-icon" />
                     </a>
+                    {/** 
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <FaExternalLinkAlt className="project-icon link-icon" />
                     </a>
+                    */}
                   </div>
                 </div>
                 <Card.Body>

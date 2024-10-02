@@ -5,7 +5,7 @@ nav.navbar {
   z-index: 1;
   background-color: #121212;
   transition: padding 0.32s ease-in-out;
-  position: fixed;
+  position: relative;
 }
 
 nav.navbar a.navbar-brand {
