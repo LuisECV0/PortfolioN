@@ -2,10 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import './AboutMe.css';
 import mob from '../assets/img/mob2.svg';
+import cv from '../assets/font/Luis-Castañeda-Vega-.pdf';
 
 export const AboutMe = () => {
   const downloadCV = () => {
-    window.open('https://firebasestorage.googleapis.com/v0/b/login-89b46.appspot.com/o/Pdfs%2FLuis-Casta%C3%B1eda-Vega-.pdf?alt=media&token=ee3ccc69-fbc8-41bd-bddd-80a6d67b38b2', '_blank');
+    window.open(cv, '_blank');
   };
 
   return (

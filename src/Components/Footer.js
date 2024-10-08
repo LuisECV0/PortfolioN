@@ -9,7 +9,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col className="text-center"> {/* Eliminamos el tamaño específico */}
+          <Col className="text-center">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/luis-casta%C3%B1eda-vega/">
                 <img src={navIcon1} alt="LinkedIn - Luis Castañeda Vega" />
