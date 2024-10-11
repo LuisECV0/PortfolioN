@@ -21,8 +21,8 @@ const projects = [
     title: 'Project - Clone Netflix',
     description: 
     [
-      <FaHtml5 color="#E34F26" />, 
-      <FaCss3Alt color="#1572B6" />, 
+      <FaNodeJs color="#E34F26" />, 
+      <FaReact color="#1572B6" />, 
       <FaJs color="#F7DF1E" />
     ],
     imgUrl: 'https://i.ibb.co/2hQS8H5/Clone-Netflix-min.png',
