@@ -62,8 +62,7 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
 }
-
-/* Animación de overlay */
+ 
 .project-card::before {
   content: "";
   position: absolute;
@@ -120,4 +119,11 @@
 
 .link-icon {
   margin-right: 10px;
+}
+
+.card-text svg{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px ;
+  
 }
