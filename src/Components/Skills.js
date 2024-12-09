@@ -2,22 +2,22 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Skills.css';
 import { FaJsSquare, FaPython, FaPhp, FaBootstrap, FaSass, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaHtml5 } from 'react-icons/fa';
-import { SiCsharp, SiMysql } from 'react-icons/si';
+import { SiCplusplus, SiMysql } from 'react-icons/si';
 
 const Skills = () => {
   const skills = [
-    { icon: <FaHtml5 />, name: 'HTML5' },
-    { icon: <FaJsSquare />, name: 'JavaScript' },
-    { icon: <FaPython />, name: 'Python' },
-    { icon: <FaPhp />, name: 'PHP' },
-    { icon: <FaBootstrap />, name: 'Bootstrap' },
-    { icon: <FaSass />, name: 'Sass' },
-    { icon: <FaReact />, name: 'React' },
-    { icon: <FaNodeJs />, name: 'Node.js' },
-    { icon: <FaGitAlt />, name: 'Git' },
-    { icon: <FaGithub />, name: 'GitHub' },
-    { icon: <SiMysql />, name: 'MySQL' },
-    { icon: <SiCsharp />, name: 'C#' },
+    { icon: <FaHtml5 color="#E34F26" />, name: 'HTML5' },
+    { icon: <FaJsSquare color="#F7DF1E" />, name: 'JavaScript' },
+    { icon: <FaPython color="#306998" />, name: 'Python' },
+    { icon: <FaPhp color="#787CB5" />, name: 'PHP' },
+    { icon: <FaBootstrap color="#563D7C" />, name: 'Bootstrap' },
+    { icon: <FaSass color="#C69F8C" />, name: 'Sass' },
+    { icon: <FaReact color="#61DBFB" />, name: 'React' },
+    { icon: <FaNodeJs color="#8CC84B" />, name: 'Node.js' },
+    { icon: <FaGitAlt color="#F34F29" />, name: 'Git' },
+    { icon: <FaGithub color="#333" />, name: 'GitHub' },
+    { icon: <SiMysql color="#4479A1" />, name: 'MySQL' }, 
+    { icon: <SiCplusplus color="#68217A" />, name: 'C#' },
   ];
 
   return (

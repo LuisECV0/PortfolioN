@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from 'react-icons/fa';
+import { SiCplusplus, SiMysql } from 'react-icons/si';
 //import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Projects.css';
@@ -21,7 +22,7 @@ const projects = [
     title: 'Project - Clone Netflix',
     description: 
     [
-      <FaNodeJs color="#E34F26" />, 
+      <FaCss3Alt color="#1572B6" />, 
       <FaReact color="#1572B6" />, 
       <FaJs color="#F7DF1E" />
     ],
@@ -32,7 +33,7 @@ const projects = [
     title: 'Project - Clone Google',
     description:
     [
-      <FaHtml5 color="#E34F26" />, 
+      <FaReact color="#1572B6" />, 
       <FaCss3Alt color="#1572B6" />, 
       <FaJs color="#F7DF1E" />
     ],
@@ -100,7 +101,8 @@ const projects = [
     [
       <FaHtml5 color="#E34F26" />, 
       <FaCss3Alt color="#1572B6" />, 
-      <FaJs color="#F7DF1E" />
+      <FaJs color="#F7DF1E" />,
+      <SiMysql color="#1572B6" />
     ],
     imgUrl: 'https://i.ibb.co/KxP5FXQ/p4-min.png',
     gitUrl: 'https://github.com/LuisECV0/login-php',
