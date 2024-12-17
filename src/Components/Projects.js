@@ -19,7 +19,7 @@ const projects = [
     gitUrl: 'https://github.com/LuisECV0/landing-hacienda-montalban',  
   },
   {
-    title: 'Project - Clone Netflix',
+    title: 'Project - Netflix',
     description: 
     [
       <FaCss3Alt color="#1572B6" />, 
@@ -27,10 +27,10 @@ const projects = [
       <FaJs color="#F7DF1E" />
     ],
     imgUrl: 'https://i.ibb.co/2hQS8H5/Clone-Netflix-min.png',
-    gitUrl: 'https://github.com/LuisECV0/Clone-Netflix',
+    gitUrl: 'https://github.com/LuisECV0/ntfx-inspired-project',
   },
   {
-    title: 'Project - Clone Google',
+    title: 'Project - Google',
     description:
     [
       <FaReact color="#1572B6" />, 
@@ -38,7 +38,7 @@ const projects = [
       <FaJs color="#F7DF1E" />
     ],
     imgUrl: 'https://i.ibb.co/QdWLjCg/clone-google-min.png',
-    gitUrl: 'https://github.com/LuisECV0/Google-Cln',
+    gitUrl: 'https://github.com/LuisECV0/gsearch-inspired-project',
   }, 
   {
     title: 'Project - Ecommerce',
@@ -62,8 +62,9 @@ const projects = [
     imgUrl: 'https://i.ibb.co/pRCXygX/cal-sass-min.png',
     gitUrl: 'https://github.com/LuisECV0/calculadoraSAS',
   },
+/** NO ESTA TERMINADO
   {
-    title: 'Project - FB Clone',
+    title: 'Project - Facebook',
     description:
     [
       <FaHtml5 color="#E34F26" />, 
@@ -72,6 +73,32 @@ const projects = [
     ],
     imgUrl: 'https://i.ibb.co/HVyGrBS/clon-FB-min.png',
     gitUrl: 'https://github.com/LuisECV0/clonFB',
+  }
+  */
+  ,  
+  {
+    title: 'Landing Page RE:ZERO',
+    description: 
+    [
+      <FaHtml5 color="#E34F26" />, 
+      <FaCss3Alt color="#1572B6" />, 
+      <FaJs color="#F7DF1E" />
+    ],
+    imgUrl: 'https://i.ibb.co/GPxCHRX/p2-min.png',
+    gitUrl: 'https://github.com/LuisECV0/landing-page',
+  },
+  {
+    title: 'Project - Login',
+    description: 
+    [
+      <FaHtml5 color="#E34F26" />, 
+      <FaCss3Alt color="#1572B6" />, 
+      <FaJs color="#F7DF1E" />,
+      <SiMysql color="#1572B6" />
+      
+    ],
+    imgUrl: 'https://i.ibb.co/KxP5FXQ/p4-min.png',
+    gitUrl: 'https://github.com/LuisECV0/login-php',
   },   
   {
     title: 'Rock, Paper, Scissors',
@@ -83,30 +110,7 @@ const projects = [
     ],
     imgUrl: 'https://i.ibb.co/hWVrMr1/p1-min.png',
     gitUrl: 'https://github.com/LuisECV0/Piedra-papel-tijera',
-  },
-  {
-    title: 'LANDNG PAGE RE ZERO',
-    description: 
-    [
-      <FaHtml5 color="#E34F26" />, 
-      <FaCss3Alt color="#1572B6" />, 
-      <FaJs color="#F7DF1E" />
-    ],
-    imgUrl: 'https://i.ibb.co/GPxCHRX/p2-min.png',
-    gitUrl: 'https://github.com/LuisECV0/landing-page',
-  },  
-  {
-    title: 'Project - Login',
-    description: 
-    [
-      <FaHtml5 color="#E34F26" />, 
-      <FaCss3Alt color="#1572B6" />, 
-      <FaJs color="#F7DF1E" />,
-      <SiMysql color="#1572B6" />
-    ],
-    imgUrl: 'https://i.ibb.co/KxP5FXQ/p4-min.png',
-    gitUrl: 'https://github.com/LuisECV0/login-php',
-  },  
+  }, 
 
 ];
 
