@@ -1,88 +1,59 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Swal from 'sweetalert2';
 import './Contact.css';
-
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false); // Evitar envíos múltiples
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setIsSubmitting(true);
+    const formData = new FormData(event.target); 
 
-    const formData = new FormData(event.target);
+    formData.append("access_key", "dc85e2e6-f5e4-4842-bca7-d18a628a2d75");
 
-    // Validación de campos en el frontend
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-    if (!/^[a-zA-Z\s]+$/.test(name)) {
-      Swal.fire({ title: 'Error', text: 'Nombre no válido. Usa solo letras y espacios.', icon: 'error' });
-      setIsSubmitting(false);
-      return;
-    }
-    if (!/\S+@\S+\.\S+/.test(email)) {
-      Swal.fire({ title: 'Error', text: 'Correo electrónico no válido.', icon: 'error' });
-      setIsSubmitting(false);
-      return;
-    }
-    if (message.trim().length < 5) {
-      Swal.fire({ title: 'Error', text: 'El mensaje es demasiado corto.', icon: 'error' });
-      setIsSubmitting(false);
-      return;
-    }
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json()); 
 
-    // Enviar datos al backend (aquí se usa un proxy como ejemplo)
-    try {
-      const res = await fetch('/api/contact', { // Cambia '/api/contact' por tu backend real
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
+    if (res.success) { 
+      Swal.fire({
+        title: "Enviado!",
+        text: "Mensaje enviado correctamente",
+        icon: "success"
       });
-
-      const data = await res.json();
-
-      if (data.success) {
-        Swal.fire({ title: '¡Enviado!', text: 'Mensaje enviado correctamente.', icon: 'success' });
-        event.target.reset(); // Limpia el formulario
-      } else {
-        Swal.fire({ title: 'Error', text: 'Hubo un problema al enviar tu mensaje.', icon: 'error' });
-      }
-    } catch (error) {
-      Swal.fire({ title: 'Error', text: 'Error al conectar con el servidor.', icon: 'error' });
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
   return (
     <section className='contact' id='contact'>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit}> {/* onSubmit activado momentaneamente -- '' para desactivar */}
+
         <h2>Contact Form</h2>
 
         <div className='input-box'>
-          <label>Nombre:</label>
-          <input type="text" name="name" className='field' placeholder="Ingresa tu nombre" required />
+          <label>Name:</label>
+          <input type="text" name='name' className='field' placeholder="Enter your Name" required/>
         </div>
 
         <div className='input-box'>
-          <label>Correo electrónico:</label>
-          <input type="email" name="email" className='field' placeholder="Ingresa tu correo" required />
+          <label>Email address:</label>
+          <input type="email" name='email' className='field' placeholder="Enter your email" required/>
         </div>
 
         <div className='input-box'>
-          <label>Mensaje:</label>
-          <textarea name="message" className='field mess' placeholder="Escribe tu mensaje" required></textarea>
+          <label>Your Message:</label>
+          <textarea name='message' id='' className='field mess' placeholder='Enter your message' required></textarea>
         </div>
 
-        <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
-        </button>
+        <button type='submit'>Send Message</button>
       </form>
     </section>
   );
 };
-
 export default Contact;
