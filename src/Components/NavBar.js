@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 import './NavBar.css';
 
 export const NavBar = () => {
@@ -50,12 +50,18 @@ export const NavBar = () => {
 
             </Nav>
             <span className="navbar-text">
-                <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt="Linkedin" /></a>
-                    <a href="#"><img src={navIcon2} alt="Facebook" /></a>
-                    <a href="#"><img src={navIcon3} alt="Instagram" /></a>
+                <div className="social-icon">              
+                  <a href="https://www.linkedin.com/in/luis-casta%C3%B1eda-vega/">
+                    <img src={navIcon1} alt="LinkedIn - Luis Castañeda Vega" />
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100005745138869">
+                    <img src={navIcon2} alt="Facebook - Luis Castañeda Vega" />
+                  </a>
+                  <a href="https://github.com/LuisECV0">
+                    <img src={navIcon4} alt="Github - Luis Castañeda Vega" />
+                  </a>
                 </div>
-            {/*<button className="vvd" onClick={() => console.log('connect')}><span>Let is connect</span></button>*/}
+            
             </span>
           </Navbar.Collapse>
         </Container>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import './AboutMe.css';
-
 import mob from '../assets/img/mob2.svg';
 import cv from '../assets/font/Luis-Castañeda-Vega-.pdf';
 
