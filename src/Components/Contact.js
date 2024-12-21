@@ -1,6 +1,7 @@
 import React from 'react';
 import Swal from 'sweetalert2';
 import './Contact.css';
+
 const Contact = () => {
 
   const onSubmit = async (event) => {
@@ -56,4 +57,5 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;
