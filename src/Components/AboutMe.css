@@ -73,6 +73,31 @@
     transform: scale(0.95);
 }
 
+
+  
+button {
+    background-color: #121212;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 13px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+button:hover {
+    background-color: #333333;
+}
+  
+button:active {
+    transform: scale(0.98);
+}
+  
+  
+
 @media (max-width: 767px) {
     .about-me img {
         width: 40%; 
