@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from 'react-icons/fa';
-import { SiCplusplus, SiMysql } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
+import { SiMysql } from 'react-icons/si';
 //import { FaExternalLinkAlt } from 'react-icons/fa';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Projects.css';
@@ -72,10 +72,9 @@ const projects = [
       <FaJs color="#F7DF1E" />
     ],
     imgUrl: 'https://i.ibb.co/HVyGrBS/clon-FB-min.png',
-    gitUrl: 'https://github.com/LuisECV0/clonFB',
+    gitUrl: 'https://github.com/sLuisECV0/clonFB',
   }
   */
-  ,  
   {
     title: 'Landing Page RE:ZERO',
     description: 
